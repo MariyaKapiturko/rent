@@ -1,11 +1,10 @@
 .offer
     padding: 130px 0
     &-block
-        background: #fff url('../img/offer/form-bg.png') no-repeat center 
-        background-size: cover
+        background: #ffffff 
         box-shadow: 0 15px 25px rgba(0, 0, 0, .1)
         padding: 80px
-        margin-top: -200px
+        margin-top: -300px
     &__title
         font-size: 25px
         text-transform: uppercase
@@ -19,14 +18,10 @@
     &__row
         display: flex
         align-items: center
-        max-width: 900px
+        max-width: 100%
         margin-bottom: 25px
         &:last-child
             margin-bottom: 0
-    &__label
-        display: block
-        font-size: 17px
-        margin-bottom: 15px
     &__group
         flex-basis: 33.33%
     &__input
@@ -34,14 +29,18 @@
         border-right-width: 0
         &:last-child
             border-right-width: 1px
+        &:invalid:not(:placeholder-shown)
+            border-color: red
+        &:valid:not(:placeholder-shown)
+            border-color: green
     &__button
         height: 80px
         width: 100%
-@media(max-width: 768px) 
+        cursor: pointer
+
+@media(max-width: 991px) 
     .offer
         &-block 
-            background: none
-            background-color: #fff
             padding: 40px
         &__title
             font-size: 18px
@@ -50,16 +49,6 @@
     .form
         &__row
             flex-direction: column
-            &-checkbox
-                display: block
-                // position: relative
-                // left: 50%
-                // margin-left: -52.5px
-        &-checkbox
-            flex-direction: row
-        &__checkbox
-            &:first-child
-                margin-bottom: 20px
         &__group
             flex-basis: 100%
             width: 100%
@@ -67,10 +56,10 @@
             margin-bottom: 20px
 @media(max-width: 380px) 
     .form
-        &__label
-            font-size: 14px
         &__input
             height: 50px
+        &__button
+            padding: 10px 30px
 
 
 
