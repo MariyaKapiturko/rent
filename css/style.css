@@ -45,9 +45,6 @@
 
 html {
   height: 100%;
-}
-
-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,11 +607,17 @@ input[type="checkbox"]:checked + label:before {
   .catalog-block__text {
     margin-top: 5px;
   }
+  .blog-list {
+    margin-left: -40%;
+  }
   .blog-list__text {
     padding: 2px;
   }
   .blog-list__image {
     width: 200px;
+  }
+  .blog__link-more {
+    display: none;
   }
 }
 
@@ -694,6 +697,9 @@ input[type="checkbox"]:checked + label:before {
   .reasons-block__image {
     height: auto;
     width: 50px;
+  }
+  .reasons-block__second {
+    margin-left: 0;
   }
 }
 

@@ -6,12 +6,15 @@
   background-color: #ffffff
   z-index: 99
   box-shadow: 0 5px 10px rgba(0,0,0,0.08)
+
   &-wrap
     display: flex
     align-items: center
     justify-content: space-between
+
   &__mobile, &__landline
     text-align: right
+
   &__phone
     display: block
     margin-bottom: 5px
@@ -19,6 +22,7 @@
     +bold
     text-decoration: none
     color: $text-color
+
   &__small-text
     display: block
     font-size: 14px
@@ -47,23 +51,32 @@
     font-size: 18px
     text-transform: uppercase
     +bold 
+
   &__description
     display: block
     font-size: 14px
     color: $text-color-light
+
 @media (max-width: 1199px)
+
   .navbar
     &__mobile, &__landline
       display: none
+
 @media (max-width: 576px)
+
   .logo
     display: none
+
   .menu
     top: 60px
+
     &-button
       height: 60px
+
     &__nav
       flex-direction: column
+      
     &__link
       margin-bottom: 20px
   
