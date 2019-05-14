@@ -1,0 +1,53 @@
+.reasons-block
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__second
+        text-align: right
+        margin-left: -570px
+
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 500px
+        margin-right: -280px
+        font-size: 20px
+
+        img
+            margin: 0 20px
+            object-fit: contain
+            
+    &__arrow
+        margin: 20px 0
+
+    &__none
+        display: none
+        text-align: left
+
+@media (max-width: 768px)
+    .reasons-block
+        margin-left: -300px
+        &__arrow
+            display: none
+        &__flex
+            display: none
+        &__none
+            display: flex
+        &__second
+            text-align: right
+            margin-left: 15px
+
+@media (max-width: 578px)
+    .reasons
+        &-block
+            &__item
+                max-width: 250px
+            &__image
+                height: auto
+                width: 50px
+
+
+
+            
