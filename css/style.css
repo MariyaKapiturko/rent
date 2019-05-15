@@ -393,9 +393,16 @@ input[type="checkbox"]:checked + label:before {
 @media (max-width: 380px) {
   .form__input {
     height: 50px;
+    padding: 10px;
   }
   .form__button {
     padding: 10px 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .form__input {
+    padding: 5px;
   }
 }
 
