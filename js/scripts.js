@@ -1,1 +1,8 @@
-$('.reviews-block').slick();
+$(document).ready(function() {
+  $(".single-slide").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
+});
