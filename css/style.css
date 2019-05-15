@@ -45,6 +45,9 @@
 
 html {
   height: 100%;
+}
+
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,6 +358,12 @@ input[type="checkbox"]:checked + label:before {
   cursor: pointer;
 }
 
+@media (max-width: 1199px) {
+  .form__input {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 991px) {
   .offer-block {
     padding: 40px;
@@ -574,6 +583,8 @@ input[type="checkbox"]:checked + label:before {
   .blog-list__text {
     position: relative;
     left: 40px;
+    text-align: left;
+    margin-top: 20px;
   }
   .blog-list__flex {
     display: none;
@@ -584,6 +595,7 @@ input[type="checkbox"]:checked + label:before {
     display: flex;
     position: relative;
     left: 50%;
+    margin-left: -32px;
   }
 }
 
