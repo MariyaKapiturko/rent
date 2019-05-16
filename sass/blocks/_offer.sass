@@ -49,6 +49,18 @@
         width: 100%
         cursor: pointer
 
+.input
+  height: 80px
+  padding-left: 30px
+  border: 1px solid #dddddd
+  margin-right: 20px
+
+input[type="checkbox"]
+  display: none
+
+  &:checked + label:before
+      background-color: $primary
+
 @media(max-width: 1199px) 
 
     .form
