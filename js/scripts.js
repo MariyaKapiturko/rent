@@ -1,8 +1,14 @@
-$(document).ready(function() {
-  $(".single-slide").slick({
-    slidesToShow: 3,
+$(document).ready(function(){
+  $('.reviews-block').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 4000,
+    dots: true,
+    infinite: true,
+    fade: true,
+    cssEase: 'linear',
+    // adaptiveHeight: true,
+    adaptiveWidth: true,
   });
 });
