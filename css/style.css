@@ -660,6 +660,11 @@ input[type="checkbox"]:checked + label:before {
      object-fit: contain;
 }
 
+.reasons-block__item:last-child {
+  margin-left: -15px;
+  margin-top: -2px;
+}
+
 .reasons-block__arrow {
   margin: 20px 0;
 }
