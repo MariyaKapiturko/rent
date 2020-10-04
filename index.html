@@ -6,12 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Rent</title>
-
-<link rel="shortcut icon" type="image/png" href="rent.png"/>
-
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+<title>Rent</title>
+
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+<link rel="shortcut icon" type="image/png" href="rent.png" />
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -62,11 +71,11 @@
           <span class="offer__subtitle">И с вами свяжется менеджер</span>
           <form method="get" class="form__row">
             <div class="form__group">
-              <input type="text" class="form__input input" placeholder="Телефон/viber/telegram"
-                pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" maxlength="20" autofocus required>
+              <input type="tel" class="form__input input" placeholder="Телефон/viber/telegram"
+                pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" maxlength="20" required>
             </div>
             <div class="form__group">
-              <input type="tel" class="form__input input" placeholder="Email" required
+              <input type="text" class="form__input input" placeholder="Email" required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
             <div class="form__group">
@@ -85,17 +94,23 @@
         <h2 class="section-title section__title">3 причины сдать свой аккаунт facebook</h2>
         <div class="features-block">
           <div class="features-block__item">
-            <img src="img/features/feature-1.png" alt="Преимущества" class="features-block__image">
-            <p class="features-block__text">Вы можете получать по 3000 гривен в месяц легко и без усилий</p>
+            <img class="wow fadeInLeft features-block__image" data-wow-offset="100" data-wow-duration="1s"
+              src="img/features/feature-1.png" alt="Преимущества">
+            <p class="wow fadeInLeft features-block__text" data-wow-offset="100" data-wow-duration="1.5s">Вы можете
+              получать по 3000 гривен в месяц легко и без усилий</p>
           </div>
           <div class="features-block__item">
-            <img src="img/features/feature-2.png" alt="Преимущества" class="features-block__image">
-            <p class="features-block__text">Никто не будет менять ваш пароль – нам нужен только рекламный кабинет,
+            <img class="wow fadeInUp features-block__image" data-wow-offset="100" data-wow-duration="1s"
+              src="img/features/feature-2.png" alt="Преимущества">
+            <p class=" wow fadeInUp features-block__text" data-wow-offset="100" data-wow-duration="1.5s">Никто не будет
+              менять ваш пароль – нам нужен только рекламный кабинет,
               который привязан к вашей странице</p>
           </div>
           <div class="features-block__item">
-            <img src="img/features/feature-3.png" alt="Преимущества" class="features-block__image">
-            <p class="features-block__text">Никаких постов от вашего имени и спама – ваши друзья вообще не догадаются,
+            <img class="wow fadeInRight features-block__image" data-wow-offset="100" data-wow-duration="1s"
+              src="img/features/feature-3.png" alt="Преимущества">
+            <p class="wow fadeInRight features-block__text" data-wow-offset="100" data-wow-duration="1.5s">Никаких
+              постов от вашего имени и спама – ваши друзья вообще не догадаются,
               что вы зарабатываете на своей страничке</p>
           </div>
         </div>
@@ -106,8 +121,10 @@
       <div class="container">
         <h2 class="section-title section__title">Зачем нам нужен ваш аккаунт?</h2>
         <div class="catalog-block">
-          <img src="img/catalog/screen.jpg" alt="Скриншот">
-          <p class="catalog-block__text">Нам нужно ставить как можно больше рекламы в facebook, но социальная сеть
+          <img class="wow fadeInLeft" data-wow-offset="100" data-wow-duration="1s" src="img/catalog/screen.jpg"
+            alt="Скриншот">
+          <p class="wow fadeInRight catalog-block__text" data-wow-offset="100" data-wow-duration="1s">Нам нужно ставить
+            как можно больше рекламы в facebook, но социальная сеть
             ограничивает количество баннеров, которые можно установить с одной страницы. Да, можно было бы создать кучу
             аккаунтов с нуля, но facebook запрещает ставить рекламу с только что созданных страниц. Поэтому мы просто
             возьмем в аренду уже готовый аккаунт</p>
@@ -123,25 +140,31 @@
           <div class="blog-list">
             <div class="blog-card blog-list__card">
               <div class="blog-list__image">
-                <img src="img/blog-list/one.png" alt="Аккаунту уже больше года" class="blog-list__flex">
+                <img class="wow fadeInDown" data-wow-offset="100" data-wow-duration="1s" src="img/blog-list/one.png"
+                  alt="Аккаунту уже больше года" class="blog-list__flex">
               </div>
               <img src="img/blog-list/tick.png" alt="Аккаунту уже больше года" class="blog-list__none">
-              <div class="blog-list__text">Аккаунту уже больше года</div>
+              <div class="wow fadeInUp blog-list__text" data-wow-offset="100" data-wow-duration="1s">Аккаунту уже больше
+                года</div>
             </div>
             <div class="blog-card blog-list__card">
               <div class="blog-list__image">
-                <img src="img/blog-list/checked.png" alt="Аккаунт верифицирован" class="blog-list__flex">
+                <img class="wow fadeInDown" data-wow-offset="100" data-wow-duration="1s" src="img/blog-list/checked.png"
+                  alt="Аккаунт верифицирован" class="blog-list__flex">
               </div>
               <img src="img/blog-list/tick.png" alt="Аккаунт верифицирован" class="blog-list__none">
-              <div class="blog-list__text">Аккаунт верифицирован, то есть в нем подтвержден телефон, электронная почта,
+              <div class="wow fadeInUp blog-list__text" data-wow-offset="100" data-wow-duration="1s">Аккаунт
+                верифицирован, то есть в нем подтвержден телефон, электронная почта,
                 заполненный профиль и фото</div>
             </div>
             <div class="blog-card blog-list__card">
               <div class="blog-list__image">
-                <img src="img/blog-list/padlock.png" alt="Незаблокированный рекламный кабинет" class="blog-list__flex">
+                <img class="wow fadeInDown" data-wow-offset="100" data-wow-duration="1s" src="img/blog-list/padlock.png"
+                  alt="Незаблокированный рекламный кабинет" class="blog-list__flex">
               </div>
               <img src="img/blog-list/tick.png" alt="Незаблокированный рекламный кабинет" class="blog-list__none">
-              <div class="blog-list__text">У вас есть незаблокированный рекламный кабинет (если вы им никогда не
+              <div class="wow fadeInUp blog-list__text" data-wow-offset="100" data-wow-duration="1s">У вас есть
+                незаблокированный рекламный кабинет (если вы им никогда не
                 пользовались, значит он точно не заблокирован)</div>
             </div>
           </div>
@@ -154,22 +177,29 @@
         <h2 class="section-title section__title">Как происходит процедура аренды?</h2>
         <div class="reasons-block">
           <div class="reasons-block__item">
-            <img src="img/reasons/one.png" alt="Заявка" class="reasons-block__image">
-            <p class="reasons-block__text">Вы оставляете заявку на сайте</p>
+            <img class="wow fadeInLeft" data-wow-offset="100" data-wow-duration="1s" src="img/reasons/one.png"
+              alt="Заявка" class="reasons-block__image">
+            <p class="wow fadeInRight reasons-block__text">Вы оставляете заявку на сайте</p>
           </div>
-          <img src="img/reasons/arrow.png" alt="Связывается менеджер" class="reasons-block__arrow">
+          <img class="wow zoomIn" data-wow-offset="200" data-wow-duration="1s" src="img/reasons/arrow.png"
+            alt="Связывается менеджер" class="reasons-block__arrow">
           <div class="reasons-block__item reasons-block__second">
-            <p class="reasons-block__text reasons-block__flex">С вами связывается менеджер, <br>уточняет куда вам
+            <p class="wow fadeInLeft reasons-block__text reasons-block__flex" data-wow-offset="100"
+              data-wow-duration="1s">С вами связывается менеджер, <br>уточняет куда вам
               <br>лучше отправить деньги
             </p>
-            <img src="img/reasons/two.png" alt="Связывается менеджер" class="reasons-block__image">
+            <img class="wow fadeInRight" data-wow-offset="100" data-wow-duration="1s" src="img/reasons/two.png"
+              alt="Связывается менеджер" class="reasons-block__image">
             <p class="reasons-block__none">С вами связывается менеджер, <br>уточняет куда вам <br>лучше отправить деньги
             </p>
           </div>
-          <img src="img/reasons/arrow.png" alt="Подтверждение аккаунта" class="reasons-block__arrow">
+          <img class="wow zoomIn" data-wow-offset="200" data-wow-duration="1s" src="img/reasons/arrow.png"
+            alt="Подтверждение аккаунта" class="reasons-block__arrow">
           <div class="reasons-block__item">
-            <img src="img/reasons/three.png" alt="Подтверждение аккаунта" class="reasons-block__image">
-            <p class="reasons-block__text">Если ваш аккаунт подходит, <br>мы перечисляем вам деньги, <br>а вы на время
+            <img class="wow fadeInLeft" data-wow-offset="100" data-wow-duration="1s" src="img/reasons/three.png"
+              alt="Подтверждение аккаунта" class="reasons-block__image">
+            <p class="wow fadeInRight reasons-block__text" data-wow-offset="100" data-wow-duration="1s">Если ваш аккаунт
+              подходит, <br>мы перечисляем вам деньги, <br>а вы на время
               даете свои <br>логин и пароль</p>
           </div>
         </div>
@@ -180,11 +210,16 @@
       <div class="container">
         <h2 class="section-title section__title">Наши партнеры:</h2>
         <div class="partners-block">
-          <img src="img/partners/coca_cola.png" alt="Партнер">
-          <img src="img/partners/drop_box.png" alt="Партнер">
-          <img src="img/partners/intel.png" alt="Партнер">
-          <img src="img/partners/nokia.png" alt="Партнер">
-          <img src="img/partners/zendesk.png" alt="Партнер">
+          <img class="wow bounceInUp" data-wow-offset="100" data-wow-duration="1s" src="img/partners/coca_cola.png"
+            alt="Партнер">
+          <img class="wow bounceInUp" data-wow-offset="100" data-wow-duration="1.3s" src="img/partners/drop_box.png"
+            alt="Партнер">
+          <img class="wow bounceInUp" data-wow-offset="100" data-wow-duration="1.6s" src="img/partners/intel.png"
+            alt="Партнер">
+          <img class="wow bounceInUp" data-wow-offset="100" data-wow-duration="1.9s" src="img/partners/nokia.png"
+            alt="Партнер">
+          <img class="wow bounceInUp" data-wow-offset="100" data-wow-duration="2.2s" src="img/partners/zendesk.png"
+            alt="Партнер">
         </div>
       </div>
     </section>
@@ -192,6 +227,7 @@
     <section class="reviews section bg-secondary">
       <div class="container">
         <h2 class="section-title section__title">Сомневаетесь? Прочитайте отзывы:</h2>
+
         <div class="reviews-block">
           <div class="reviews-block__text">
             <img src="img/reviews/people_1.png" alt="Отзыв">
@@ -209,7 +245,25 @@
             </p>
             <p className="reviews-block__subtext">— Ирина Семенюк</p>
           </div>
+
+          <div class="reviews-block__text">
+            <img src="img/reviews/people_3.png" alt="Отзыв">
+            <p>
+              Я уже 3 месяца сдаю свой аккаунт. А что? Он и так без дела был создан. Теперь хоть деньги с него получаю
+            </p>
+            <p className="reviews-block__subtext">— Александр Данько</p>
+          </div>
+
+          <div class="reviews-block__text">
+            <img src="img/reviews/people_4.png" alt="Отзыв">
+            <p>
+              Я сдала свой аккаунт неделю назад. Деньги перечислили сразу, на почту приходят отчеты о действиях в моем
+              аккаунте. Такой способ заработка мне по душе.
+            </p>
+            <p className="reviews-block__subtext">— Ирина Семенюк</p>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -219,18 +273,18 @@
           <h2 class="offer__title">Заполните форму</h2>
           <span class="offer__subtitle">И с вами свяжется менеджер</span>
           <form method="get" class="form__row">
-            <div class="form__group">
+            <div class="form__group wow zoomIn" data-wow-offset="100" data-wow-delay="0s" data-wow-duration="1s">
               <input type="text" class="form__input input" placeholder="Телефон/viber/telegram"
-                pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" maxlength="20" autofocus required>
+                pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" maxlength="20" required>
             </div>
-            <div class="form__group">
+            <div class="form__group wow zoomIn" data-wow-offset="100" data-wow-delay="1s" data-wow-duration="1s">
               <input type="tel" class="form__input input" placeholder="Email" required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             </div>
-            <div class="form__group">
+            <div class="form__group wow zoomIn" data-wow-offset="100" data-wow-delay="1.5s" data-wow-duration="1s">
               <input type="text" class="form__input input" placeholder="Ссылка на Facebook" required>
             </div>
-            <div class="form__group">
+            <div class="form__group wow zoomIn" data-wow-offset="100" data-wow-delay="0.5s" data-wow-duration="1s">
               <input type="submit" class="button form__button" value="Сдать аккаунт">
             </div>
           </form>
@@ -247,6 +301,13 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+  <script type="text/javascript" src="https://spikmi.com/Widget?Id=711"></script>
 </body>
 
 </html>

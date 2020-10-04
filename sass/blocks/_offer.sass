@@ -49,6 +49,25 @@
         width: 100%
         cursor: pointer
 
+.input
+  height: 80px
+  padding-left: 30px
+  border: 1px solid #dddddd
+  margin-right: 20px
+
+input[type="checkbox"]
+  display: none
+
+  &:checked + label:before
+      background-color: $primary
+
+@media(max-width: 1199px) 
+
+    .form
+        &__input
+            padding: 10px
+
+
 @media(max-width: 991px) 
     .offer
         &-block 
@@ -75,9 +94,15 @@
     .form
         &__input
             height: 50px
+            padding: 10px
 
         &__button
             padding: 10px 30px
+
+@media(max-width: 380px) 
+    .form
+        &__input
+            padding: 5px
 
 
 
